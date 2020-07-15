@@ -1,5 +1,7 @@
 # Case Study 2: Ensemble Sampling, Assembly, and Modeling
 
+Demonstration of MASSpy utility through an ensemble modeling workflow.
+
 ## Directory and file descriptions:
 * **Ensemble Modeling Generation.ipynb**: 
   * A notebook to construct the ensemble of models based on a glycolysis model with hemoglobin and pyruvate kinase modules. 
