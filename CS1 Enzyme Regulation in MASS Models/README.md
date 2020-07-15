@@ -22,6 +22,6 @@ Validation of MASSpy as a modeling tool by describing mechanisms of enzyme regul
   * A notebook to create the panels seen in Figure 2 of the MASSpy publication.
 * **CS1_data**:
   * **maps**: Contains Escher maps of Glycolysis with and without PYK enzyme module as JSON files.
-  * **models** Contains all models used in the case study as JSON files.
+  * **models**: Contains all models used in the case study as JSON files.
   * **Non-personalized-data.xlsx**: Excel sheet containing kinetic data necessary to parameterize models as seen in [Yurkovich et al.](https://doi.org/10.1371/journal.pcbi.1006356). Used in **Non-personalized_Model_construction.ipynb**.
 
