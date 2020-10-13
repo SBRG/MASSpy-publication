@@ -38,7 +38,3 @@ Case studies are organized into seperate directories, each containing relevant J
 in the `MASSpy-publication` source directory. Additional information about scripts and files can be found in the README file of the case study.
 
 **Note:** Case studies 2 and 3 rely on MCMC sampling, which contains elements of random number generation (e.g., MCMC sampling). Consequently, case study results may vary slightly when repeated. 
-
-## License
-The MASSpy source and case study code is released under both the GPL and LGPL licenses. You may choose which license you choose to use the software under. However, please note that binary packages which include GLPK (such as the binary wheels distributed at https://pypi.python.org/pypi/cobra) and libRoadRunner will be bound by their licenses as well.
-
