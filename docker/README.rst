@@ -1,14 +1,7 @@
 Using Docker
 ============
 The following guide provides instructions on how to create a working Docker container for the
-examples outlined in the MASSpy Publication. To simplify the reading of this guide, the following abbreviations
-will be used to reference specific sections of the MASSpy publication manuscript:
-
-1. **validation**: Validation as a modeling tool through enzyme regulation in MASS models
-2. **ensemble-modeling**: Demonstration of features through ensemble sampling, assembly, and modeling
-3. **case-study**: Case study: computing functional states of the *E. coli* proteome
-
-In order to run the **ensemble-modeling** and **case study** examples, an optimization solver is required.
+examples outlined in the MASSpy Publication. In order to run the **ensemble-modeling** and **case study** examples, an optimization solver is required.
 It can be one of the following:
 
 * *ILOG CPLEX Optimization Studio 12.10*
@@ -16,7 +9,6 @@ It can be one of the following:
 
 See the `MASSpy documentation on optimization solvers <https://masspy.readthedocs.io/en/v0.1.1/installation/solvers.html>`_
 for more information on obtaining a license and the solver.
-
 
 Running the publication code
 ----------------------------
