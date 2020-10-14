@@ -32,23 +32,25 @@ The following build context is used::
     └── docker              # Root directory for build context
         ├── Dockerfile      # Dockerfile from VCS (https://github.com/SBRG/MASSpy/blob/v0.1.1/docker/Dockerfile)
         └── cplex           # Required to install CPLEX
-            ├── cplex_studio1210.linux-x86-64.bin
-            └── cplex.install.properties
+            ├─ cplex_studio1210.linux-x86-64.bin
+            └─ cplex.install.properties
 
-Once the CPLEX installer has been obtained, create an image for MASSpy (v0.1.1) using the following::
+All files required for the build context can be found in the
+`MASSpy GitHub <https://github.com/SBRG/MASSpy/tree/v0.1.1/docker>`_, with the exception of the optimization installer file.
+
+Once the CPLEX installer has been obtained, create an image called ``sbrg/masspy:0.1.1`` via the following::
 
     docker build \
         --build-arg python_version=3.7 \
         --build-arg mass_version=0.1.1 \
         -t sbrg/masspy:0.1.1 ./docker
 
-After building the MASSpy image, the next step is to **build the MASSpy-publication image**.
-
+After building the image, the next step is to **build the MASSpy-publication image**.
 
 Step 2: Build the MASSpy-publication image
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-After the MASSpy image has been created, the next step is to create the image for the MASSpy-publication.
-The following build context is used::
+After creating the MASSpy image ``sbrg/masspy:0.1.1 ``, the next step is to create the image 
+``sbrg/masspy-publication`` for the MASSpy-publication. The following build context is used::
 
     MASSpy-publication          # Source directory (also root directory for build context)
         ├── Dockerfile          # https://github.com/SBRG/MASSpy/blob/v0.1.1/docker/Dockerfile
@@ -62,14 +64,16 @@ To create the ``sbrg/masspy-publication`` image with all examples included, use 
 
 After building the image, the next step is to **build the container**.
 
+
 Step 3: Build the container
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Once created, the MASSpy-publication image is used to create the container using the following::
+Once created, the MASSpy-publication image ``sbrg/masspy-publication`` is used to create the
+container using the following::
 
-docker run -rm \
-    --mount type=volume,src=licenses,dst=/home/masspy_user/opt/licenses \
-    --publish 8888:8888 \
-    -it sbrg/masspy-publication
+    docker run -rm \
+        --mount type=volume,src=licenses,dst=/home/masspy_user/opt/licenses \
+        --publish 8888:8888 \
+        -it sbrg/masspy-publication
 
 Running the above command will create an interactive shell to use within the container.
 To use the iPython notebooks inside the container, run ``jupyter notebook --ip=0.0.0.0 --port=8888``.
@@ -78,19 +82,20 @@ Wrap up
 +++++++
 To exit and remove the container, run ``exit`` using the interactive shell inside the container.
 
+
 Additional information
-~~~~~~~~~~~~~~~~~~~~~~
+----------------------
 Some additional information about using the repository code with Docker is provided below.
 
 Using Gurobi 
-++++++++++++
+~~~~~~~~~~~~
 The *Gurobi Optimizer* can be used instead of the CPLEX solver to produce similar results.
 A floating license is required to use Gurobi in a Docker container. Consult the
 `MASSpy documentation on optimization solvers <https://masspy.readthedocs.io/en/v0.1.1/installation/solvers.html>`_ for
 more information.
 
 Building the image for a specific example
-+++++++++++++++++++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 All examples from the repository are included in the Docker by default. However, the Docker container can be reduced in order to look at only one specific example.
 
 * To only include  the **validation** example::
