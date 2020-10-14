@@ -15,9 +15,10 @@ However, the environment file ``masspy-publication-env.yml`` has been provided i
 `Conda <https://docs.conda.io/projects/conda/en/latest/index.html>`_ package manager.
 
 To utilize the code in this repository, MASSpy v0.1.1 is required. The source code for 
-MASSpy v0.1.1 can be found `here <https://github.com/SBRG/MASSpy/tree/v0.1.1>`_. Building the Docker container
-or using the ``masspy-publication-env.yml`` environment file with Conda will ensure the correct version of MASSpy and
-other dependencies are installed.
+MASSpy v0.1.1 can be found `here <https://github.com/SBRG/MASSpy/tree/v0.1.1>`_. 
+
+Building the Docker container or using the ``masspy-publication-env.yml`` environment file with Conda will ensure the correct version of MASSpy and
+is installed as well as compatible versions of other dependencies.
 
 MASSpy Source Code
 ------------------
