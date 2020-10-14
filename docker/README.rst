@@ -52,15 +52,13 @@ Step 2: Build the MASSpy-publication image
 After creating the MASSpy image ``sbrg/masspy:0.1.1 ``, the next step is to create the image 
 ``sbrg/masspy-publication`` for the MASSpy-publication. The following build context is used::
 
-    MASSpy-publication          # Source directory (also root directory for build context)
-        ├── Dockerfile          # https://github.com/SBRG/MASSpy/blob/v0.1.1/docker/Dockerfile
-        ├── validation          # Directory for example
-        ├── ensemble-modeling   # Directory for example
-        └── case-study          # Directory for example
+    MASSpy-Publication      # Source directory
+    └── docker              # Root directory for build context
+        └── Dockerfile      # Dockerfile from https://github.com/SBRG/MASSpy-publication/blob/master/docker/Dockerfile
 
 To create the ``sbrg/masspy-publication`` image with all examples included, use the following command::
 
-    docker build -t sbrg/masspy-publication .
+    docker build -t sbrg/masspy-publication ./docker
 
 After building the image, the next step is to **build the container**.
 
@@ -70,7 +68,7 @@ Step 3: Build the container
 Once created, the MASSpy-publication image ``sbrg/masspy-publication`` is used to create the
 container using the following::
 
-    docker run -rm \
+    docker run --rm \
         --mount type=volume,src=licenses,dst=/home/masspy_user/opt/licenses \
         --publish 8888:8888 \
         -it sbrg/masspy-publication
