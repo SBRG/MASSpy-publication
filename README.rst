@@ -4,9 +4,9 @@ This repository contains all scripts, notebooks, and data needed to reproduce ca
 To simplify the reading of this guide, the following abbreviations will be used to reference specific sections of the
 MASSpy publication manuscript:
 
-    1. **validation**: Validation as a modeling tool through enzyme regulation in MASS models
-    2. **ensemble-modeling**: Demonstration of features through ensemble sampling, assembly, and modeling
-    3. **case-study**: Case study: computing functional states of the *E. coli* proteome
+1. **validation**: Validation as a modeling tool through enzyme regulation in MASS models
+2. **ensemble-modeling**: Demonstration of features through ensemble sampling, assembly, and modeling
+3. **case-study**: Case study: computing functional states of the *E. coli* proteome
 
 The recommended method to explore the code in this repository is to use a `Docker <https://docs.docker.com/>`_ container.
 Instructions for running a Docker container are found in the `Docker README </docker/README.rst>`_
@@ -32,7 +32,8 @@ for more information.
 Using Docker
 ------------
 
-Instructions for running a Docker container are found in the `Docker README </docker/README.rst>`_
+Instructions for running a Docker container are found in the
+README for `Using Docker </docker/README.rst>`_ for the MASSpy-publication.
 
 
 Using a Conda Python Environment
@@ -48,7 +49,7 @@ After downloading the source code, use the terminal or an Anaconda Prompt to run
 in the `MASSpy-publication` source directory. Additional conda instructions for creating an environment from an environmment file are found
 `here <https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file>`_.
 
-To run the case studies, MASSpy version 0.1.1 is required. The correct version of MASSpy will be installed with the conda environment file. To run the notebooks,
+To run the examples, MASSpy version 0.1.1 is required. The correct version of MASSpy will be installed with the conda environment file. To run the notebooks,
 clone the repository and use a shell or an Anaconda Prompt to run the following::
 
     jupyter notebook
