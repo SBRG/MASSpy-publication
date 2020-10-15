@@ -4,10 +4,7 @@ USER root
 ENV EXAMPLES_DIR=${HOME}/mass_project/MASSpy-publication
 
 WORKDIR ${HOME}/tmp
-RUN echo \
-    && git clone https://github.com/SBRG/MASSpy-publication.git '--quiet' . \
-    && git checkout revisions
-
+RUN git clone https://github.com/SBRG/MASSpy-publication.git '--quiet' .
 WORKDIR ${EXAMPLES_DIR}
 
 # Image only for validation example
@@ -20,7 +17,8 @@ RUN rm -rf tmp
 
 USER ${USER}
 
-ENTRYPOINT [ "./opt/docker-scripts/docker-entrypoint.sh" ]
+WORKDIR ${HOME}/mass_project/
+ENTRYPOINT [ "../opt/docker-scripts/docker-entrypoint.sh" ]
 CMD [ "sh" ]
 
 # Image only for ensemble modeling demonstration
@@ -33,7 +31,8 @@ RUN rm -rf tmp
 
 USER ${USER}
 
-ENTRYPOINT [ "./opt/docker-scripts/docker-entrypoint.sh" ]
+WORKDIR ${HOME}/mass_project/
+ENTRYPOINT [ "../opt/docker-scripts/docker-entrypoint.sh" ]
 CMD [ "sh" ]
 
 # Image only for case study
@@ -46,7 +45,8 @@ RUN rm -rf tmp
 
 USER ${USER}
 
-ENTRYPOINT [ "./opt/docker-scripts/docker-entrypoint.sh" ]
+WORKDIR ${HOME}/mass_project/
+ENTRYPOINT [ "../opt/docker-scripts/docker-entrypoint.sh" ]
 CMD [ "sh" ]
 
 # Image for entire publication
