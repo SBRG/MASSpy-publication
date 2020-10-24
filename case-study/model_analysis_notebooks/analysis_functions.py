@@ -674,7 +674,7 @@ def create_figures_for_export(enzyme, model_dicts, isozyme_split_percentages,
 
 
 def save_figure(enzyme_id, medium, fig_type, fig, svg=True, pdf=True):
-    path = "../CS3_data/analysis_figures/{0}/".format(fig_type)
+    path = "../data/analysis_figures/{0}/".format(fig_type)
     try:
         os.listdir(path)
     except FileNotFoundError:

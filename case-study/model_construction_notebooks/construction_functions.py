@@ -111,7 +111,7 @@ def make_enzyme_module_from_dir(enzyme_id, steady_state_flux=None,
 
     def path_to_enzyme_file(type_str):
         """Return filepath to an enzyme data file."""
-        enzyme_dir = os.path.join(path_to_dir, enzyme_module.id.lower())
+        enzyme_dir = os.path.join(path_to_dir, enzyme_module.id)
         filename = "_".join((type_str, enzyme_module.id.lower()))
         if filename + ".txt" in os.listdir(enzyme_dir):
             filename += ".txt"
