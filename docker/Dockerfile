@@ -33,8 +33,8 @@ RUN echo \
     && chown -R ${USER} ${EXAMPLES_DIR}/ \
     && chmod -R 777 ${EXAMPLES_DIR}/
 USER ${USER}
-WORKDIR ${HOME}/mass_project/
-ENTRYPOINT [ "../opt/docker-scripts/docker-entrypoint.sh" ]
+WORKDIR ${EXAMPLES_DIR}
+ENTRYPOINT [ "../../opt/docker-scripts/docker-entrypoint.sh" ]
 CMD [ "sh" ]
 
 # Image only for ensemble modeling demonstration
@@ -49,8 +49,8 @@ RUN echo \
     && chown -R ${USER} ${EXAMPLES_DIR}/ \
     && chmod -R 777 ${EXAMPLES_DIR}/
 USER ${USER}
-WORKDIR ${HOME}/mass_project/
-ENTRYPOINT [ "../opt/docker-scripts/docker-entrypoint.sh" ]
+WORKDIR ${EXAMPLES_DIR}
+ENTRYPOINT [ "../../opt/docker-scripts/docker-entrypoint.sh" ]
 CMD [ "sh" ]
 
 # Image only for case study
@@ -65,8 +65,8 @@ RUN echo \
     && chown -R ${USER} ${EXAMPLES_DIR}/ \
     && chmod -R 777 ${EXAMPLES_DIR}/
 USER ${USER}
-WORKDIR ${HOME}/mass_project/
-ENTRYPOINT [ "../opt/docker-scripts/docker-entrypoint.sh" ]
+WORKDIR ${EXAMPLES_DIR}
+ENTRYPOINT [ "../../opt/docker-scripts/docker-entrypoint.sh" ]
 CMD [ "sh" ]
 
 # Image for entire publication
@@ -85,6 +85,6 @@ RUN echo \
     && chown -R ${USER} ${EXAMPLES_DIR}/ \
     && chmod -R 777 ${EXAMPLES_DIR}/
 USER ${USER}
-WORKDIR ${HOME}/mass_project/
-ENTRYPOINT [ "../opt/docker-scripts/docker-entrypoint.sh" ]
+WORKDIR ${EXAMPLES_DIR}
+ENTRYPOINT [ "../../opt/docker-scripts/docker-entrypoint.sh" ]
 CMD [ "sh" ]
