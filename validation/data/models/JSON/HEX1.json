@@ -103,7 +103,7 @@
     "id": "HEX1",
     "metabolites": [
         {
-            "_initial_condition": 1.0000003633303347,
+            "_initial_condition": 1.0,
             "charge": 0,
             "compartment": "c",
             "formula": "C6H12O6",
@@ -111,7 +111,7 @@
             "name": "D-Glucose"
         },
         {
-            "_initial_condition": 0.04859997822195344,
+            "_initial_condition": 0.0486,
             "charge": -2,
             "compartment": "c",
             "formula": "C6H11O9P",
@@ -135,7 +135,7 @@
             "name": "ATP"
         },
         {
-            "_initial_condition": 0.28999999119642894,
+            "_initial_condition": 0.29,
             "charge": -3,
             "compartment": "c",
             "formula": "C10H12N5O10P2",
@@ -143,7 +143,7 @@
             "name": "ADP"
         },
         {
-            "_initial_condition": 8.997571410461636e-05,
+            "_initial_condition": 8.99757e-05,
             "charge": 1,
             "compartment": "c",
             "formula": "H",
@@ -152,7 +152,7 @@
         },
         {
             "_bound_metabolites": {},
-            "_initial_condition": 1.1571975997530738e-05,
+            "_initial_condition": 1.157198019683411e-05,
             "charge": 0,
             "compartment": "c",
             "enzyme_module_id": "HEX1",
@@ -164,7 +164,7 @@
             "_bound_metabolites": {
                 "atp_c": 1
             },
-            "_initial_condition": 8.962632702595526e-06,
+            "_initial_condition": 8.962635964175788e-06,
             "charge": -4,
             "compartment": "c",
             "enzyme_module_id": "HEX1",
@@ -176,7 +176,7 @@
             "_bound_metabolites": {
                 "glc__D_c": 1
             },
-            "_initial_condition": 5.7158274551285884e-08,
+            "_initial_condition": 5.715827509672656e-08,
             "charge": 0,
             "compartment": "c",
             "enzyme_module_id": "HEX1",
@@ -189,7 +189,7 @@
                 "atp_c": 1,
                 "glc__D_c": 1
             },
-            "_initial_condition": 1.172087171587165e-08,
+            "_initial_condition": 1.1720872154107623e-08,
             "charge": -4,
             "compartment": "c",
             "enzyme_module_id": "HEX1",
@@ -202,7 +202,7 @@
                 "_23dpg_c": 1,
                 "glc__D_c": 1
             },
-            "_initial_condition": 3.221648201981567e-08,
+            "_initial_condition": 3.221648232724589e-08,
             "charge": -5,
             "compartment": "c",
             "enzyme_module_id": "HEX1",
@@ -214,7 +214,7 @@
             "_bound_metabolites": {
                 "adp_c": 1
             },
-            "_initial_condition": 3.3558729374092007e-06,
+            "_initial_condition": 3.3558742570818916e-06,
             "charge": -3,
             "compartment": "c",
             "enzyme_module_id": "HEX1",
@@ -226,7 +226,7 @@
             "_bound_metabolites": {
                 "g6p_c": 1
             },
-            "_initial_condition": 8.435966721974423e-09,
+            "_initial_condition": 8.435973563492064e-09,
             "charge": -2,
             "compartment": "c",
             "enzyme_module_id": "HEX1",
