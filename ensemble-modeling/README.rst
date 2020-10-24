@@ -32,7 +32,7 @@ Algorithms and settings utilized
 -------------------------------
 * NumPy pseudo random number generation: 
   - Algorithm: `Mersenne Twister <https://numpy.org/doc/stable/reference/random/bit_generators/mt19937.html#numpy.random.MT19937>`_.
-  - All seeds utilized are set at ``seed=int(1234)``.
+  - All seeds utilized are set at ``seed=int(1)``.
 
 * Optimization for concentration sampling
   - Performed using CPLEX optimizer 12.10
@@ -61,5 +61,4 @@ Algorithms and settings utilized
           initial_time_step: 0
               multiple_steps: false
           variable_step_size: true
-    Simulation times and alterations to these settings are defined at the time of simulation and 
-    provided in corresponding sections of the notebooks.
+    Alterations to these settings are defined at the time of simulation.
