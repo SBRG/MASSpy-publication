@@ -10,7 +10,7 @@ for notebook in 'glycolysis' \
                 'hex1' \
                 'pfk' \
                 'pyk' \
-                'bon-personalized_model_construction' \
+                'non-personalized_model_construction' \
                 'non-personalized_model_validation' \
                 'fig2_panels' ; do \
     echo "Executing $notebook.ipynb"
