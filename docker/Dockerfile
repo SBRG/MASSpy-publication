@@ -12,9 +12,9 @@ WORKDIR ${HOME}/tmp
 RUN echo \
     && git clone https://github.com/SBRG/MASSpy-publication.git '--quiet' . \
     # Install xlrd to read and write Excel Sheets with pandas
-    && pip install xlrd '--quiet' \
+    && pip install xlrd '--quiet' --no-cache-dir \
     # Install simplejson for improved performance with JSON files
-    && pip install simplejson '--quiet'
+    && pip install simplejson '--quiet' --no-cache-dir
 
 # FIXME: Remove when finished
 RUN git checkout revisions
