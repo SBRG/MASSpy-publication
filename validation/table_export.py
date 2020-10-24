@@ -6,7 +6,6 @@ from mass.io.json import load_json_model
 
 def export_tidy_df_as_csv_value_table(list_of_models, attr,
                                       notebook, filename):
-    path_to_model_dir = os.path.realpath(os.path.join("data", "models", "JSON"))
     variable_mapping_dict = {
         "initial_conditions": "init_conds",
         "steady_state_fluxes": "fluxes",

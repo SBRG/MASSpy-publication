@@ -51,5 +51,4 @@ Algorithms and settings utilized
           initial_time_step: 0
               multiple_steps: false
           variable_step_size: true
-    Simulation times and alterations to these settings are defined at the time of simulation and 
-    provided in corresponding sections of the notebooks.
+    Alterations to these settings are defined at the time of simulation.
