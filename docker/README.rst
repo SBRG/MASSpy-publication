@@ -90,12 +90,12 @@ All examples from the repository are included in the Docker by default. However,
 
 * To only include  the **validation** example::
 
-    docker build --target validation -t sbrg/masspy-publication:validation .
+    docker build --target validation -t sbrg/masspy-publication:validation ./docker
 
 * To only include  the **ensemble-modeling** example::
 
-    docker build --target ensemble-modeling -t sbrg/masspy-publication:ensemble-modeling .
+    docker build --target ensemble-modeling -t sbrg/masspy-publication:ensemble-modeling ./docker
 
 * To only include the **case-study** example::
 
-    docker build --target case-study -t sbrg/masspy-publication:case-study .
+    docker build --target case-study -t sbrg/masspy-publication:case-study ./docker
