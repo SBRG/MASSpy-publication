@@ -41,7 +41,7 @@ Algorithms and settings utilized
   - Algorithm: ``CVODE``
   - Simulations always start at ``t=0``.
   - Default integrator settings for all simulations using ``Simulation.simulate``
-    or ``Simulation.find_steady_state(strategy="simulate")`` unless explicitly indicated in notebook::
+    or ``Simulation.find_steady_state(strategy="simulate")`` unless explicitly changed in notebook::
 
       < roadrunner.Integrator() >
       name: cvode
