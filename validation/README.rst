@@ -23,6 +23,7 @@ use the commands to build and run a Docker container for only the **validation**
     docker build --target validation -t sbrg/masspy-publication:validation ./docker && \
     docker run --rm \
         --mount type=volume,src=mass_project,dst=/home/masspy_user/mass_project/ \
+        --mount type=volume,src=licenses,dst=/home/masspy_user/opt/licenses \
         --publish 8888:8888 \
         -it sbrg/masspy-publication:validation
 
