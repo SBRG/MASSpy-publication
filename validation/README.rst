@@ -31,9 +31,12 @@ and run ``jupyter notebook --ip=0.0.0.0 --port=8888`` in the shell to get starte
 Algorithms and settings utilized
 -------------------------------
 * Optimization for enzyme module rate constant parameters 
-  - Performed using ``scipy.optimize.minimize`` with the ``trust-constr`` for nonlinear convex optimizationmethod.
+
+  - Performed using ``scipy.optimize.minimize`` with the ``trust-constr`` for nonlinear convex optimization method.
   - Additional settings: ``{"gtol": 1e-12, "xtol": 1e-12, "maxiter": 1e4}``
+  
 * Integrator
+
   - Algorithm: ``CVODE``
   - Simulations always start at ``t=0``.
   - Default integrator settings for all simulations using ``Simulation.simulate``
@@ -53,6 +56,7 @@ Algorithms and settings utilized
           initial_time_step: 0
               multiple_steps: false
           variable_step_size: true
+          
     Alterations to these settings are defined at the time of simulation.
 
 Directory and File Descriptions
