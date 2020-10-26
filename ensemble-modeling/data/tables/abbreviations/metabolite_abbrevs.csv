@@ -1,0 +1,89 @@
+﻿ID,Name
+glc__D_c,D-Glucose
+g6p_c,D-Glucose 6-phosphate
+f6p_c,D-Fructose 6-phosphate
+fdp_c,"D-Fructose 1,6-bisphosphate"
+dhap_c,Dihydroxyacetone phosphate
+g3p_c,Glyceraldehyde 3-phosphate
+_13dpg_c,3-Phospho-D-glyceroyl phosphate
+_3pg_c,3-Phospho-D-glycerate
+_2pg_c,D-Glycerate 2-phosphate
+pep_c,Phosphoenolpyruvate
+pyr_c,Pyruvate
+lac__L_c,L-Lactate
+nad_c,Nicotinamide adenine dinucleotide
+nadh_c,Nicotinamide adenine dinucleotide - reduced
+amp_c,AMP
+adp_c,ADP
+atp_c,ATP
+pi_c,Phosphate
+h_c,H+
+h2o_c,H2O
+amp_b,AMP
+glc__D_b,D-Glucose
+h2o_b,H2O
+h_b,H+
+lac__L_b,L-Lactate
+pi_b,Phosphate
+pyr_b,Pyruvate
+_23dpg_c,"2,3-Disphospho-D-glycerate"
+hb_c,Hemoglobin
+hb_1o2_c,Oxyhemoglobin (1)
+hb_2o2_c,Oxyhemoglobin (2)
+hb_3o2_c,Oxyhemoglobin (3)
+hb_4o2_c,Oxyhemoglobin (4)
+dhb_c,Deoxyhemoglobin
+o2_c,Oxygen
+o2_b,Oxygen
+hex1_c,HEX1
+hex1_A_c,HEX1-atp complex
+hex1_G_c,HEX1-glc__D complex
+hex1_AG_c,HEX1-glc__D-atp complex
+hex1_G_CI_c,HEX1-glc__D-_23dpg complex
+hex1_A_PI_c,HEX1-adp complex
+hex1_G_PI_c,HEX1-g6p complex
+pfk_R0_c,PFK
+pfk_R0_A_c,PFK-atp complex
+pfk_R0_AF_c,PFK-atp-f6p complex
+pfk_R1_c,PFK; 1 amp_c
+pfk_R1_A_c,PFK-atp complex; 1 amp_c
+pfk_R1_AF_c,PFK-atp-f6p complex; 1 amp_c
+pfk_R2_c,PFK; 2 amp_c
+pfk_R2_A_c,PFK-atp complex; 2 amp_c
+pfk_R2_AF_c,PFK-atp-f6p complex; 2 amp_c
+pfk_R3_c,PFK; 3 amp_c
+pfk_R3_A_c,PFK-atp complex; 3 amp_c
+pfk_R3_AF_c,PFK-atp-f6p complex; 3 amp_c
+pfk_R4_c,PFK; 4 amp_c
+pfk_R4_A_c,PFK-atp complex; 4 amp_c
+pfk_R4_AF_c,PFK-atp-f6p complex; 4 amp_c
+pfk_T0_c,PFK
+pfk_T1_c,PFK; 1 atp_c
+pfk_T2_c,PFK; 2 atp_c
+pfk_T3_c,PFK; 3 atp_c
+pfk_T4_c,PFK; 4 atp_c
+pyk_R0_c,PYK
+pyk_R0_A_c,PYK-adp complex
+pyk_R0_P_c,PYK-pep complex
+pyk_R0_AP_c,PYK-adp-pep complex
+pyk_R1_c,PYK; 1 fdp_c
+pyk_R1_A_c,PYK-adp complex; 1 fdp_c
+pyk_R1_P_c,PYK-pep complex; 1 fdp_c
+pyk_R1_AP_c,PYK-adp-pep complex; 1 fdp_c
+pyk_R2_c,PYK; 2 fdp_c
+pyk_R2_A_c,PYK-adp complex; 2 fdp_c
+pyk_R2_P_c,PYK-pep complex; 2 fdp_c
+pyk_R2_AP_c,PYK-adp-pep complex; 2 fdp_c
+pyk_R3_c,PYK; 3 fdp_c
+pyk_R3_A_c,PYK-adp complex; 3 fdp_c
+pyk_R3_P_c,PYK-pep complex; 3 fdp_c
+pyk_R3_AP_c,PYK-adp-pep complex; 3 fdp_c
+pyk_R4_c,PYK; 4 fdp_c
+pyk_R4_A_c,PYK-adp complex; 4 fdp_c
+pyk_R4_P_c,PYK-pep complex; 4 fdp_c
+pyk_R4_AP_c,PYK-adp-pep complex; 4 fdp_c
+pyk_T0_c,PYK
+pyk_T1_c,PYK; 1 atp_c
+pyk_T2_c,PYK; 2 atp_c
+pyk_T3_c,PYK; 3 atp_c
+pyk_T4_c,PYK; 4 atp_c

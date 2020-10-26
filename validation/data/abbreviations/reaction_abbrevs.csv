@@ -1,0 +1,97 @@
+﻿ID,Name
+HEX1,Hexokinase (D-glucose:ATP)
+PGI,Glucose-6-phosphate isomerase
+PFK,Phosphofructokinase
+FBA,Fructose-bisphosphate aldolase
+TPI,Triose-phosphate isomerase
+GAPD,Glyceraldehyde-3-phosphate dehydrogenase
+PGK,Phosphoglycerate kinase
+PGM,Phosphoglycerate mutase
+ENO,Enolase
+PYK,Pyruvate kinase
+LDH_L,L-lactate dehydrogenase
+DM_amp_c,AMP demand
+ADK1,Adenylate kinase
+SK_pyr_c,Pyruvate sink
+SK_lac__L_c,L-Lactate sink
+ATPM,ATP maintenance requirement
+DM_nadh,Demand NADH
+SK_glc__D_c,D-Glucose sink
+SK_amp_c,AMP sink
+SK_h_c,H+ sink
+SK_h2o_c,H2O sink
+SK_pi_c,Phosphate sink
+DPGM,Diphosphoglyceromutase
+DPGase,Diphosphoglycerate phosphatase
+HBO1,Oxygen Loading (1)
+HBO2,Oxygen Loading (2)
+HBO3,Oxygen Loading (3)
+HBO4,Oxygen Loading (4)
+HBDPG,Hemoglobin-23dpg binding
+SK_o2_c,Oxygen sink
+HEX1_1,hex1-adp binding
+HEX1_2,hex1-g6p binding
+HEX1_3,hex1-glc__D binding
+HEX1_4,hex1-atp binding
+HEX1_5,hex1_G-_23dpg binding
+HEX1_6,hex1_G-atp binding
+HEX1_7,hex1_A-glc__D binding
+HEX1_8,hex1_AG catalyzation
+PFK_R01,pfk_R0-atp binding
+PFK_R02,pfk_R0_A-f6p binding
+PFK_R03,pfk_R0_AF catalyzation
+PFK_R10,pfk_R0-amp binding
+PFK_R11,pfk_R1-atp binding
+PFK_R12,pfk_R1_A-f6p binding
+PFK_R13,pfk_R1_AF catalyzation
+PFK_R20,pfk_R1-amp binding
+PFK_R21,pfk_R2-atp binding
+PFK_R22,pfk_R2_A-f6p binding
+PFK_R23,pfk_R2_AF catalyzation
+PFK_R30,pfk_R2-amp binding
+PFK_R31,pfk_R3-atp binding
+PFK_R32,pfk_R3_A-f6p binding
+PFK_R33,pfk_R3_AF catalyzation
+PFK_R40,pfk_R3-amp binding
+PFK_R41,pfk_R4-atp binding
+PFK_R42,pfk_R4_A-f6p binding
+PFK_R43,pfk_R4_AF catalyzation
+PFK_L,pfk_R0-pfk_T0 transition
+PFK_T1,pfk_T0-atp binding
+PFK_T2,pfk_T1-atp binding
+PFK_T3,pfk_T2-atp binding
+PFK_T4,pfk_T3-atp binding
+PYK_R01,pyk_R0-pep binding
+PYK_R02,pyk_R0-adp binding
+PYK_R03,pyk_R0_A-pep binding
+PYK_R04,pyk_R0_P-adp binding
+PYK_R05,pyk_R0_AP catalyzation
+PYK_R10,pyk_R0-fdp binding
+PYK_R11,pyk_R1-pep binding
+PYK_R12,pyk_R1-adp binding
+PYK_R13,pyk_R1_A-pep binding
+PYK_R14,pyk_R1_P-adp binding
+PYK_R15,pyk_R1_AP catalyzation
+PYK_R20,pyk_R1-fdp binding
+PYK_R21,pyk_R2-pep binding
+PYK_R22,pyk_R2-adp binding
+PYK_R23,pyk_R2_A-pep binding
+PYK_R24,pyk_R2_P-adp binding
+PYK_R25,pyk_R2_AP catalyzation
+PYK_R30,pyk_R2-fdp binding
+PYK_R31,pyk_R3-pep binding
+PYK_R32,pyk_R3-adp binding
+PYK_R33,pyk_R3_A-pep binding
+PYK_R34,pyk_R3_P-adp binding
+PYK_R35,pyk_R3_AP catalyzation
+PYK_R40,pyk_R3-fdp binding
+PYK_R41,pyk_R4-pep binding
+PYK_R42,pyk_R4-adp binding
+PYK_R43,pyk_R4_A-pep binding
+PYK_R44,pyk_R4_P-adp binding
+PYK_R45,pyk_R4_AP catalyzation
+PYK_L,pyk_R0-pyk_T0 transition
+PYK_T1,pyk_T0-atp binding
+PYK_T2,pyk_T1-atp binding
+PYK_T3,pyk_T2-atp binding
+PYK_T4,pyk_T3-atp binding

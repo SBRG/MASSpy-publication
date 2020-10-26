@@ -2,6 +2,7 @@ Guide for example: validation
 =============================
 
 * All files and instructions are available in the `MASSpy-publication GitHub Repository <https://github.com/SBRG/MASSpy-publication>`_.
+* The SBML model files (L3V1) for the models utilized in the example are also available online in the GitHub repository. 
 * It is highly recommended to clone the repository and build a ``Docker`` container to follow along with this example.
 
 The corresponding section of the MASSpy manuscript:
