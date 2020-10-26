@@ -61,6 +61,7 @@ Once created, the MASSpy-publication image ``sbrg/masspy-publication`` is used t
 container using the following::
 
     docker run --rm \
+        --mount type=volume,src=mass_project,dst=/home/masspy_user/mass_project/ \
         --mount type=volume,src=licenses,dst=/home/masspy_user/opt/licenses \
         --publish 8888:8888 \
         -it sbrg/masspy-publication
