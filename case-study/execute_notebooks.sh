@@ -16,7 +16,7 @@ for media in 'glucose' 'pyruvate' ; do \
     done
 done
 
-cd $( cd "$(dirname "$0")/model_analysis_notebooks" ; pwd -P )
+cd ../model_analysis_notebooks
 
 # Execute notebooks in order
 for notebook in 'analysis_on_gibbs_free_energy_and_enzyme_abundances_for_growth_conditions' \

@@ -9,13 +9,20 @@ def export_tidy_df_as_csv_value_table(list_of_models, attr,
     variable_mapping_dict = {
         "initial_conditions": "init_conds",
         "steady_state_fluxes": "fluxes",
-        "_get_all_parameters": "parameters"}
+        "_get_all_parameters": "parameters",
+        "odes": "equation"}
 
     try:
-        df = pd.DataFrame.from_dict({
-            model.id: {
-                getattr(x, "_id", str(x)): value for x, value in getattr(model, attr).items()}
-            for model in list_of_models})
+        if attr == "odes":
+            df = pd.DataFrame.from_dict({
+                model.id: {
+                    getattr(x, "_id", str(x)): str(value) for x, value in getattr(model, attr).items()}
+                for model in list_of_models})
+        else:
+            df = pd.DataFrame.from_dict({
+                model.id: {
+                    getattr(x, "_id", str(x)): value for x, value in getattr(model, attr).items()}
+                for model in list_of_models})
     except AttributeError:
         df = pd.DataFrame.from_dict({
             model.id: {
@@ -51,6 +58,10 @@ def export_csv_files_for_models(model_list, notebook, prefix="", suffix=""):
         model_list, "_get_all_parameters", 
         notebook=notebook,
         filename=prefix + "all_model_parameters" + suffix)
+    export_tidy_df_as_csv_value_table(
+        model_list, "odes", 
+        notebook=notebook,
+        filename=prefix + "all_model_odes" + suffix)
 
     print("Exports finished for {0} models".format(str(len(model_list))))
 
