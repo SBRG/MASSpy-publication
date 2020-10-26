@@ -25,10 +25,10 @@ use the commands to build and run a Docker container for only the **validation**
     docker run --rm \
         --mount type=volume,src=mass_project,dst=/home/masspy_user/mass_project/ \
         --mount type=volume,src=licenses,dst=/home/masspy_user/opt/licenses \
-        --publish 8888:8888 \
+        --publish 8885:8885 \
         -it sbrg/masspy-publication:validation
 
-and run ``jupyter notebook --ip=0.0.0.0 --port=8888`` in the shell to get started!
+and run ``jupyter notebook --ip=0.0.0.0 --port=8885`` in the shell to get started!
 
 Algorithms and settings utilized
 -------------------------------

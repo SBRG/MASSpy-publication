@@ -28,10 +28,10 @@ use the commands to build and run a Docker container for only the **case-study**
     docker run --rm \
         --mount type=volume,src=mass_project,dst=/home/masspy_user/mass_project/ \
         --mount type=volume,src=licenses,dst=/home/masspy_user/opt/licenses \
-        --publish 8888:8888 \
+        --publish 8887:8887 \
         -it sbrg/masspy-publication:case-study
 
-and run ``jupyter notebook --ip=0.0.0.0 --port=8888`` in the shell to get started!
+and run ``jupyter notebook --ip=0.0.0.0 --port=8887`` in the shell to get started!
 
 
 Algorithms and settings utilized
