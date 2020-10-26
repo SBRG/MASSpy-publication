@@ -1,0 +1,21 @@
+﻿Metabolite ID,Name
+_13dpg_c,3-Phospho-D-glyceroyl-phosphate
+_2pg_c,D-Glycerate-2-phosphate
+_3pg_c,D-Glycerate-3-phosphate
+adp_c,Adenosine diphosphate
+amp_c,Adenosine monophosphate
+atp_c,Adenosine triphosphate
+dhap_c,Dihydroxyacetone-phosphate
+f6p_c,D-Fructose-6-phosphate
+fdp_c,D-Fructose-1-6-bisphosphate
+g3p_c,Glyceraldehyde 3-phosphate
+g6p_c,D-Glucose-6-phosphate
+gdp_c,Guanosine-5'-diphosphate
+lac__D_c,D-Lactate
+nad_c,Nicotinamide-adenine-dinucleotide
+nadh_c,Nicotinamide-adenine-dinucleotide-reduced
+pep_c,Phosphoenolpyruvate
+pi_c,Phosphate
+pyr_c,Pyruvate
+h2o_c,H2O
+h_c,H+

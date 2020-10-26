@@ -12,6 +12,7 @@ for media in 'glucose' 'pyruvate' ; do \
         jupyter nbconvert --execute "$notebook.ipynb" --to notebook \
             --ExecutePreprocessor.timeout=-1 \
             --Application.log_level='CRITICAL' \
+            --ExecutePreprocessor.store_widget_state=True \
             --inplace
     done
 done
@@ -19,8 +20,9 @@ done
 cd ../model_analysis_notebooks
 
 # Execute notebooks in order
-for notebook in 'analysis_on_gibbs_free_energy_and_enzyme_abundances_for_growth_conditions' \
-                'analysis_on_gibbs_free_energy_and_enzyme_abundances_for_isozyme_flux_split_sensitivity' ; do \
+for analysis in 'growth_conditions' \
+                'isozyme_flux_split_sensitivity' ; do \
+    notebook="analysis_on_gibbs_free_energy_and_enzyme_abundances_for_${analysis}"
     echo "Executing $notebook.ipynb"
     jupyter nbconvert --execute "$notebook.ipynb" --to notebook \
         --ExecutePreprocessor.timeout=-1 \
