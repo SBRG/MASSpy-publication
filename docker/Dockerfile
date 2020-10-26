@@ -16,8 +16,6 @@ RUN echo \
     # Install simplejson for improved performance with JSON files
     && pip install simplejson '--quiet' --no-cache-dir
 
-# FIXME: Remove when finished
-RUN git checkout revisions
 WORKDIR ${EXAMPLES_DIR}
 
 # Image only for validation example
