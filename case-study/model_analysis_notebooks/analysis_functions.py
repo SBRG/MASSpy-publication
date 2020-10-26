@@ -61,7 +61,8 @@ def load_all_models_for_growth_condition_analysis(n_models, model_dir, medium,
             os.path.join(
                 model_dir, "models_isozyme_split_{0}_{1}".format(
                     format_percent_str(percent).strip(),
-                    format_percent_str(1.00 - percent).strip())))
+                    format_percent_str(1.00 - percent).strip()
+                ), "JSON"))
 
         models_dict[percent] = _load_models_for_analysis(
             n_models, new_model_dir, medium, verbose)
